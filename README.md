@@ -1,17 +1,13 @@
-<p align="center">
-  <a href="https://nextjs-flask-starter.vercel.app/">
-    <img src="https://assets.vercel.com/image/upload/v1588805858/repositories/vercel/logo.png" height="96">
-    <h3 align="center">Next.js Flask Starter</h3>
-  </a>
-</p>
 
-<p align="center">Simple Next.js boilerplate that uses <a href="https://flask.palletsprojects.com/">Flask</a> as the API backend.</p>
+# MadLLMLibs
 
-<br/>
+This is a unique and interactive application that leverages the power of OpenAI's language models to create a fun and engaging MadLibs game.
 
-## Introduction
+The application is a hybrid of Next.js and Python, using Next.js for the frontend and Flask for the API backend. The game uses OpenAI's API to generate creative and unexpected templates for the MadLibs, providing a new and exciting experience every time you play.
 
-This is a hybrid Next.js + Python app that uses Next.js as the frontend and Flask as the API backend. One great use case of this is to write Next.js apps that use Python AI libraries on the backend.
+## Models 
+
+This application is built on top of OpenAI's Davinci model. At the time of development, the 3.5-turbo model was experiencing timeout issues, hence the decision to use the Davinci model. This application serves as a great example of how AI can be integrated into web applications to enhance functionality and user experience.
 
 ## How It Works
 
@@ -22,16 +18,6 @@ This is implemented using [`next.config.js` rewrites](https://github.com/vercel/
 On localhost, the rewrite will be made to the `127.0.0.1:5328` port, which is where the Flask server is running.
 
 In production, the Flask server is hosted as [Python serverless functions](https://vercel.com/docs/concepts/functions/serverless-functions/runtimes/python) on Vercel.
-
-## Demo
-
-https://nextjs-flask-starter.vercel.app/
-
-## Deploy Your Own
-
-You can clone & deploy it to Vercel with one click:
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?demo-title=Next.js%20Flask%20Starter&demo-description=Simple%20Next.js%20boilerplate%20that%20uses%20Flask%20as%20the%20API%20backend.&demo-url=https%3A%2F%2Fnextjs-flask-starter.vercel.app%2F&demo-image=%2F%2Fimages.ctfassets.net%2Fe5382hct74si%2F795TzKM3irWu6KBCUPpPz%2F44e0c6622097b1eea9b48f732bf75d08%2FCleanShot_2023-05-23_at_12.02.15.png&project-name=Next.js%20Flask%20Starter&repository-name=nextjs-flask-starter&repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fexamples%2Ftree%2Fmain%2Fpython%2Fnextjs-flask&from=vercel-examples-repo)
 
 ## Developing Locally
 
@@ -47,20 +33,12 @@ First, install the dependencies:
 
 ```bash
 npm install
-# or
-yarn
-# or
-pnpm install
 ```
 
 Then, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -76,3 +54,9 @@ To learn more about Next.js, take a look at the following resources:
 - [Flask Documentation](https://flask.palletsprojects.com/en/1.1.x/) - learn about Flask features and API.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
