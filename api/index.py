@@ -47,7 +47,7 @@ def generate_madlibs_story_davinci():
           "Write a fun and silly story for kids."
           "It should be at least 10 sentences long, with at most 2 blanks per sentence."
           "Then, remove key words from the story, replacing them with blanks."
-          "For each blank, specify the type of word required (e.g., noun, verb, adjective, etc.) in square brackets."
+          "For each blank, specify the category of word required (e.g., proper noun, verb, adjective, etc.) in square brackets."
           "The story should be coherent but leave room for a wide range of word choices "
           "that could make the final story humorous or absurd."
       ),
