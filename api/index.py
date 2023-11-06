@@ -2,6 +2,7 @@ from flask import Flask
 from madlibs import curate_madlibs
 app = Flask(__name__)
 
+
 @app.route("/api/madlibs", methods=['GET'])
 def return_madlibs_json():
     json = curate_madlibs()

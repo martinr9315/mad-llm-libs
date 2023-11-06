@@ -2,16 +2,22 @@
 import { Button } from './components/button';
 import { useState } from 'react';
 
+interface MadLibsData {
+  story: string;
+  blanks: string;
+  status: string;
+  message: string;
+}
 
 export default function Home() {
   const [loading, setLoading] = useState(false);
-  const [madLibsData, setMadLibsData] = useState(false);
+  const [madLibsData, setMadLibsData] = useState<MadLibsData | null>(null);
   const [revealStory, setRevealStory] = useState(false);
   const [userInputs, setUserInputs] = useState<string[]>([]);
 
   const handleClick = async () => {
     setLoading(true);
-    setMadLibsData(false);
+    setMadLibsData(null);
     setRevealStory(false);
     try {
       const response = await fetch('/api/madlibs');
