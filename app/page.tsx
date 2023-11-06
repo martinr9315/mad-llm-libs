@@ -71,16 +71,16 @@ export default function Home() {
       <div className='p-3'/>
       {madLibsData && revealStory && (
         <Button onClick={handleClick} disabled={loading}>
-           {loading ? 'Loading...' : 'Generate new MadLibs'}
+           {loading ? 'Generating...' : 'Generate new MadLibs!'}
         </Button>
       )}
       {!madLibsData && (
       <Button onClick={handleClick} disabled={loading}>
-        {loading ? 'Loading...' : 'Generate MadLibs'}
+        {loading ? 'Loading...' : 'Generate MadLibs!'}
       </Button>)}
       {madLibsData && !revealStory && (
         <Button onClick={handleRevealStory} disabled={!allInputsFilled}>
-          Reveal Story
+          Reveal story!
         </Button>
       )}
     </main>

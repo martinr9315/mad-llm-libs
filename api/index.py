@@ -1,6 +1,7 @@
 from flask import Flask
 import os
 import openai
+import re
 
 app = Flask(__name__)
 openai.api_key = os.getenv("OPENAI_API_KEY")
@@ -58,7 +59,7 @@ def generate_madlibs_story_davinci():
 
 
 def extract_words_in_brackets(input_string):
-    import re
+    input_string = input_string.replace('_', '')
     if '[' in input_string:
         words = re.findall(r'\[(.*?)\]', input_string)
         for word in words:
