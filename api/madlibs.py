@@ -6,7 +6,7 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 
 def generate_madlibs_story():
     response = openai.ChatCompletion.create(
-      model="gpt-3.5-turbo",
+      model="gpt-3.5-turbo",  # too slow ! 
       messages=[
         {
             "role": "user",
@@ -29,8 +29,9 @@ def generate_madlibs_story_davinci():
     response = openai.Completion.create(
       engine="text-davinci-002",
       prompt=(
-          "Write a fun and silly story for kids that has blanks where key words will be placed."
-          "It should be at least 5 sentences long, with at most 2 blanks per sentence."
+          "Write a fun and silly story for kids."
+          "It should be at least 10 sentences long, with at most 2 blanks per sentence."
+          "Then, remove key words from the story, replacing them with blanks."
           "For each blank, specify the type of word required (e.g., noun, verb, adjective, etc.) in square brackets."
           "The story should be coherent but leave room for a wide range of word choices "
           "that could make the final story humorous or absurd."
