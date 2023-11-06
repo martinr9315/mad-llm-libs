@@ -12,3 +12,9 @@ Story-finisher
 Chapter-generator (input framework, writing style)
     Character-extractor? - for continuity 
 Little kid educational book writer (input concept, idea for story/maybe characters)
+
+
+
+Nov 5
+need to figure out how link button
+    RESTful API? I am missing understanding of how Flask backend and Next.js frontend should communicate
