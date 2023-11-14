@@ -4,6 +4,8 @@ This is a unique and interactive application that leverages the power of OpenAI'
 
 The application is a hybrid of Next.js and Python, using Next.js for the frontend and Flask for the API backend. The game uses OpenAI's API to generate creative and unexpected templates for the MadLibs, providing a new and exciting experience every time you play.
 
+
+
 ## Models 
 
 This application is built on top of OpenAI's Davinci model. At the time of development, the 3.5-turbo model was experiencing timeout issues, hence the decision to use the Davinci model. This application serves as a great example of how AI can be integrated into web applications to enhance functionality and user experience.
