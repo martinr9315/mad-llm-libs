@@ -1,4 +1,3 @@
-
 # MadLLMLibs
 
 This is a unique and interactive application that leverages the power of OpenAI's language models to create a fun and engaging MadLibs game.
